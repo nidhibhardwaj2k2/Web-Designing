@@ -1,0 +1,113 @@
+<html lang="en">
+<!DOCTYPE html>
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#c0c0c0;
+}
+
+/* Style the header */
+header {
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 20%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+    font-size:20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: right;
+    padding: 10px;
+    width: 75%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<img src="image2.jpg" height="300" width="100%">
+
+<header>
+  <h2>Continental Group of Institutes</h2>
+</header>
+
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li><br>
+      <li><a href="#">About</a></li><br>
+      <li><a href="#">Courses</a></li><br>
+      <li><a href="#">Media</a></li><br>
+      <li><a href="#">Placements</a></li><br>
+      <li><a href="#">Contact Us</a></li><br>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Chairman's Message</h1>
+    <img src="cmdsir.jpeg" height="180" width="150" style= "float:left;">
+    <p style="padding:10px; float:none;">To embark upon a journey to success, one needs the foresight, goal, resolve and strategies to attain the stipulated goal. The educational institutions in general and technical institutes in particular have to shoulder the responsibility of developing and nurturing world class engineers, technocrats and business leaders. The ability to innovate and the capacity to adapt to latest technologies are going to be the forte in the new century. </p>
+    <p>It is my conviction that success lends itself faster to those, whose confidence is inspired by not only literacy but also education in real terms encompassing character and personality traits. Our endeavor at CGI is to develop thorough bred professionals who can surpass challenges in their career and lives. With this mission, our highly qualified and experienced.God bless! </p>
+ 
+    <p><b>Lt. Col. B.S. SANDHU (Retd.)</p>
+    <p>ChairmanContinental Group Of Institutes</p>
+    
+
+  </article>
+</section>
+
+    <footer>  <p style="float:left;"><small> Copyright &copy; 2016. All rights are reserved.</small></p><p style= "float:right;"><small>Contact information: <a href="mailto:info@continental.ac.in">
+  info@continental.ac.in</a></small> </p>
+</footer>
+
+</body>
+</html>
