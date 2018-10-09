@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text Input</h2>
+
+<form action="/action_page.php" target="_blank" method="post" >
+    
+  First name:
+  <input type="text" name="firstname">
+  <br>
+  Last name:
+  <input type="text" name="lastname">
+    <br>
+    <br>User password:<br>
+<input type="password" name="psw">
+    <h2> Text area</h2>
+    <br>
+
+  Address:<br>  <textarea name="message" rows="10" cols="30">The baby was playing in the garden.</textarea>
+    
+    <br>
+    <input type="email" name="email">
+    <br>
+<h2>Radio Buttons</h2>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other 
+    <br>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+    <br><br>
+    <select name="cars" multiple>
+    <option value="volvo">Duster</option>
+    <option value="saab">Fortuner</option>
+    <option value="fiat">Honda</option>
+    <option value="audi">Audi</option>
+  </select><br>
+    <!...we can select multiple also with ctrl button>
+    <br>
+    <br>
+    <h2>Data List</h2>
+    <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> 
+    
+    
+    <h2>The button Element</h2>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    
+<input type="submit" value="Submit"> 
+<input type="reset" value="Reset">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of a text input field is 20 characters.</p>
+
+</body>
+</html>
